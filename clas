@@ -68,6 +68,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
+      - 🇸🇬Linode月抛-新加坡
       - 🇸🇬甲骨文-新加坡-AMD
       - 🇯🇵甲骨文-大阪-ARM
       - 🇰🇷AZ-Korea
@@ -92,6 +93,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 🇸🇬Linode月抛-新加坡
       - 🇸🇬甲骨文-新加坡-AMD
       - 🇯🇵甲骨文-大阪-ARM
       - 🇰🇷AZ-Korea
@@ -115,6 +117,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
+      - 🇸🇬Linode月抛-新加坡
       - 🇸🇬甲骨文-新加坡-AMD
       - 🇯🇵甲骨文-大阪-ARM
       - 🇰🇷AZ-Korea
@@ -138,6 +141,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
+      - 🇸🇬Linode月抛-新加坡
       - 🇸🇬甲骨文-新加坡-AMD
       - 🇯🇵甲骨文-大阪-ARM
       - 🇰🇷AZ-Korea
@@ -175,6 +179,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
+      - 🇸🇬Linode月抛-新加坡
       - 🇸🇬甲骨文-新加坡-AMD
       - 🇯🇵甲骨文-大阪-ARM
       - 🇰🇷AZ-Korea
