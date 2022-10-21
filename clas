@@ -41,10 +41,8 @@ dns:
         - https://dns.google/dns-query
         - https://cloudflare-dns.com/dns-query
 proxies:
-  - {"type":"vmess","name":"sg2.31vpn.com_1","ws-opts":{"path":"/fastssh/kjgdgsg/63499b27ccd2f/","headers":{"host":"sg2.31vpn.com"}},"server":"2606:4700:9c61:d1ec:3bb2:6ad8:691b:c4c6","port":"443","uuid":"dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"sg2.31vpn.com_2","ws-opts":{"path":"/fastssh/kjgdgsg/63499b27ccd2f/","headers":{"host":"sg2.31vpn.com"}},"server":"2606:4700:976b:a79:3ed8:97de:ba82:ad51","port":"80","uuid":"dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"us2.31vpn.com_1","ws-opts":{"path":"/fastssh/ddhdhhdc/63499b8f5a175/","headers":{"host":"us2.31vpn.com"}},"server":"2606:4700:9b03:93f4:3842:7973:eaaa:e5cd","port":"80","uuid":"bb4b9e95-c9ff-411c-9a47-483570e169aa","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"us2.31vpn.com_2","ws-opts":{"path":"/fastssh/ddhdhhdc/63499b8f5a175/","headers":{"host":"us2.31vpn.com"}},"server":"2606:4700:83b9:ea1f:9381:3294:f479:b0a3","port":"443","uuid":"bb4b9e95-c9ff-411c-9a47-483570e169aa","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"1","server":"iplc-hu-ri1.ddns1.pw","port":"10450","uuid":"e7540fa7-e37c-3b05-851f-a0a800cd7454","alterId":"2","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"2","ws-opts":{"path":"/ray","headers":{"host":"www.netscrazy.com"}},"server":"www.netscrazy.com","port":"9943","uuid":"62af11cc-4bc1-11ed-906b-000d3a82ddf9","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"hysteria","name":"haxh","server":"hax.lirenyi.eu.org","port":23523,"auth_str":"498e9b32a35bf4d807c150ab58ca33dbbc890","alpn":"h3","protocol":"faketcp","up":12,"down":62,"sni":"hax.lirenyi.eu.org","skip-cert-verify":false,"recv_window":26004685,"recv_window_conn":6501171,"disable_mtu_discovery":true}
   - {"type":"hysteria","name":"haxh1","server":"h.lirenyi.eu.org","port":35848,"auth_str":"790215","alpn":"h3","protocol":"udp","up":40,"down":200,"sni":"h.lirenyi.eu.org","skip-cert-verify":true,"recv_window":83886080,"recv_window_conn":20971520,"disable_mtu_discovery":true}
   - {"type":"hysteria","name":"woidenh","server":"wo.lirenyi.eu.org","port":34650,"auth_str":"790215","alpn":"h3","protocol":"udp","up":40,"down":200,"sni":"wo.lirenyi.eu.org","skip-cert-verify":true,"recv_window":83886080,"recv_window_conn":20971520,"disable_mtu_discovery":true}
@@ -64,10 +62,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
-      - sg2.31vpn.com_1
-      - sg2.31vpn.com_2
-      - us2.31vpn.com_1
-      - us2.31vpn.com_2
+      - 1
+      - 2
       - haxh
       - haxh1
       - woidenh
@@ -85,10 +81,8 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - sg2.31vpn.com_1
-      - sg2.31vpn.com_2
-      - us2.31vpn.com_1
-      - us2.31vpn.com_2
+      - 1
+      - 2
       - haxh
       - haxh1
       - woidenh
@@ -105,10 +99,8 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - sg2.31vpn.com_1
-      - sg2.31vpn.com_2
-      - us2.31vpn.com_1
-      - us2.31vpn.com_2
+      - 1
+      - 2
       - haxh
       - haxh1
       - woidenh
@@ -125,10 +117,8 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - sg2.31vpn.com_1
-      - sg2.31vpn.com_2
-      - us2.31vpn.com_1
-      - us2.31vpn.com_2
+      - 1
+      - 2
       - haxh
       - haxh1
       - woidenh
@@ -159,10 +149,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
-      - sg2.31vpn.com_1
-      - sg2.31vpn.com_2
-      - us2.31vpn.com_1
-      - us2.31vpn.com_2
+      - 1
+      - 2
       - haxh
       - haxh1
       - woidenh
