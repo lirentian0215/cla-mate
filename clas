@@ -41,6 +41,7 @@ dns:
         - https://dns.google/dns-query
         - https://cloudflare-dns.com/dns-query
 proxies:
+  - {"type":"vmess","name":"Youtube","ws-opts":{"path":"/dongtaiwang.com","headers":{"host":"clash1.trump2023.net"}},"server":"[2606:4700:9760:be29:78df:33ac:6264:3ec5]","port":"443","uuid":"176b598f-445b-41ac-9d2a-430c5c4df26a","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"netflixip","ws-opts":{"path":"/gceevws","headers":{"host":"www.xt000.xyz"}},"server":"www.xt000.xyz","port":"443","uuid":"80782eff-e3fe-fc69-37cd-7efd760adf91","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"netflix","ws-opts":{"path":"/1TpqeX","headers":{"host":"xt000.xyz"}},"server":"xt000.xyz","port":"443","uuid":"17a58fef-cf3f-42fe-b76a-76b592dc98ee","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"v2ray","server":"20.205.60.175","port":"59631","uuid":"34945a21-2c4e-4418-90ac-4f7ca4fdccde","alterId":"0","cipher":"auto","network":"tcp"}
@@ -88,6 +89,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
+      - Youtube
       - netflixip
       - netflix
       - v2ray
@@ -133,6 +135,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - Youtube
       - netflixip
       - netflix
       - v2ray
@@ -177,6 +180,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
+      - Youtube
       - netflixip
       - netflix
       - v2ray
@@ -221,6 +225,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
+      - Youtube
       - netflixip
       - netflix
       - v2ray
@@ -279,6 +284,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
+      - Youtube
       - netflixip
       - netflix
       - v2ray
