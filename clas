@@ -66,7 +66,6 @@ proxies:
   - {"type":"vmess","name":"Youtube","ws-opts":{"path":"/dongtaiwang.com","headers":{"host":"clash1.trump2023.net"}},"server":"2606:4700:9649:e61c:7320:cf96:39b:3171","port":"443","uuid":"176b598f-445b-41ac-9d2a-430c5c4df26a","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"Youtube4","ws-opts":{"path":"/dongtaiwang.com","headers":{"host":"clash1.trump2023.net"}},"server":"2606:4700:9ad3:3c9b:7dd7:77c6:eac8:7b54","port":"443","uuid":"176b598f-445b-41ac-9d2a-430c5c4df26a","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"trojan","name":"2222","server":"jpp.samvpn.xyz","port":443,"password":"Sam123321","udp":true,"skip-cert-verify":true}
-  - {"type":"vmess","name":"vmess+ws+tls","ws-opts":{"path":"/8bcc69e6-3986-4bd8-f90b-1ef3ecd36ea0","headers":{"host":"ss.xnyky.xyz"}},"server":"ss.xnyky.xyz","port":"443","uuid":"8bcc69e6-3986-4bd8-f90b-1ef3ecd36ea0","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"hysteria","name":"haxh","server":"hax.lirenyi.eu.org","port":23523,"auth_str":"498e9b32a35bf4d807c150ab58ca33dbbc890","alpn":"h3","protocol":"faketcp","up":12,"down":62,"sni":"hax.lirenyi.eu.org","skip-cert-verify":false,"recv_window":26004685,"recv_window_conn":6501171,"disable_mtu_discovery":true}
   - {"type":"hysteria","name":"haxh1","server":"h.lirenyi.eu.org","port":35848,"auth_str":"790215","alpn":"h3","protocol":"udp","up":40,"down":200,"sni":"h.lirenyi.eu.org","skip-cert-verify":true,"recv_window":83886080,"recv_window_conn":20971520,"disable_mtu_discovery":true}
   - {"type":"hysteria","name":"woidenh","server":"wo.lirenyi.eu.org","port":34650,"auth_str":"790215","alpn":"h3","protocol":"udp","up":40,"down":200,"sni":"wo.lirenyi.eu.org","skip-cert-verify":true,"recv_window":83886080,"recv_window_conn":20971520,"disable_mtu_discovery":true}
@@ -97,7 +96,6 @@ proxy-groups:
       - Youtube
       - Youtube4
       - 2222
-      - vmess+ws+tls
       - haxh
       - haxh1
       - woidenh
@@ -126,7 +124,6 @@ proxy-groups:
       - Youtube
       - Youtube4
       - 2222
-      - vmess+ws+tls
       - haxh
       - haxh1
       - woidenh
@@ -154,7 +151,6 @@ proxy-groups:
       - Youtube
       - Youtube4
       - 2222
-      - vmess+ws+tls
       - haxh
       - haxh1
       - woidenh
@@ -182,7 +178,6 @@ proxy-groups:
       - Youtube
       - Youtube4
       - 2222
-      - vmess+ws+tls
       - haxh
       - haxh1
       - woidenh
@@ -224,7 +219,6 @@ proxy-groups:
       - Youtube
       - Youtube4
       - 2222
-      - vmess+ws+tls
       - haxh
       - haxh1
       - woidenh
