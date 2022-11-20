@@ -57,6 +57,14 @@ proxies:
     obfs-opts:
         mode: tls
         host: www.microsoft.com 
+  - name: eeuserv
+    type: snell
+    server: 2a02:0180:0006:0001:0000:0000:0000:4232
+    port: 13254
+    psk: 8JhU2GJiz1eGa6yr
+    obfs-opts:
+        mode: tls
+        host: www.microsoft.com
   - {"type":"vmess","name":"tomato2","ws-opts":{"path":"/","headers":{"host":"xui.mycf.ml"}},"server":"172.64.147.9","port":"2083","uuid":"8a21b84d-183e-450d-ec82-8d45855d8180","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"tomato1","ws-opts":{"path":"/","headers":{"host":"xui.mycf.ml"}},"server":"172.64.145.2","port":"2083","uuid":"8a21b84d-183e-450d-ec82-8d45855d8180","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"koyeb","ws-opts":{"path":"/vmess","headers":{"host":"lirendian-lirentian0215.koyeb.app"}},"server":"104.19.28.145","port":"443","uuid":"225601bb-e174-4810-9828-8d50cf8ef3f9","alterId":"0","cipher":"auto","network":"ws","tls":true}
