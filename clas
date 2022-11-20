@@ -41,10 +41,10 @@ dns:
         - https://dns.google/dns-query
         - https://cloudflare-dns.com/dns-query
 proxies:
-- {name: 6ws, server: 6.letitbe.ink, port: 443, type: vmess, uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, alterId: 0, cipher: auto, tls: true, servername: 6.letitbe.ink, network: ws, ws-opts: {path: "/6.letitbe.inkvws?ed=2048", headers: {Host: 6.letitbe.ink}}}
-- {name: 6Trojan, server: 6.letitbe.ink, port: 443, type: trojan, password: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, sni: 6.letitbe.ink}
-- {name: 5ws, server: 5.letitbe.ink, port: 443, type: vmess, uuid: 84f47932-1248-41a8-82a7-c0eb134428dd, alterId: 0, cipher: auto, tls: true, servername: 5.letitbe.ink, network: ws, ws-opts: {path: "/5.letitbe.inkvws?ed=2048", headers: {Host: 5.letitbe.ink}}}
-- {name: 5Trojan, server: 5.letitbe.ink, port: 443, type: trojan, password: 84f47932-1248-41a8-82a7-c0eb134428dd, sni: 5.letitbe.ink}
+  - {"type":"vmess","name":"6ws","ws-opts":{"path":"/6.letitbe.inkvws?ed=2048"},"server":"6.letitbe.ink","port":"443","uuid":"3c266fd3-5f9f-4132-90ac-c33a2a316cb5","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"6Trojan","server":"6.letitbe.ink","port":443,"password":"3c266fd3-5f9f-4132-90ac-c33a2a316cb5","udp":true,"skip-cert-verify":true,"sni":"6.letitbe.ink"}
+  - {"type":"vmess","name":"5ws","ws-opts":{"path":"/5.letitbe.inkvws?ed=2048"},"server":"5.letitbe.ink","port":"443","uuid":"84f47932-1248-41a8-82a7-c0eb134428dd","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"5Trojan","server":"5.letitbe.ink","port":443,"password":"84f47932-1248-41a8-82a7-c0eb134428dd","udp":true,"skip-cert-verify":true,"sni":"5.letitbe.ink"}
   - name: JP
     type: snell
     server: 13.114.34.24
