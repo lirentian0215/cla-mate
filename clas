@@ -41,10 +41,16 @@ dns:
         - https://dns.google/dns-query
         - https://cloudflare-dns.com/dns-query
 proxies:
-  - {"type":"vmess","name":"6ws","ws-opts":{"path":"/6.letitbe.inkvws?ed=2048"},"server":"6.letitbe.ink","port":"443","uuid":"3c266fd3-5f9f-4132-90ac-c33a2a316cb5","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"trojan","name":"6Trojan","server":"6.letitbe.ink","port":443,"password":"3c266fd3-5f9f-4132-90ac-c33a2a316cb5","udp":true,"skip-cert-verify":true,"sni":"6.letitbe.ink"}
-  - {"type":"vmess","name":"5ws","ws-opts":{"path":"/5.letitbe.inkvws?ed=2048"},"server":"5.letitbe.ink","port":"443","uuid":"84f47932-1248-41a8-82a7-c0eb134428dd","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"trojan","name":"5Trojan","server":"5.letitbe.ink","port":443,"password":"84f47932-1248-41a8-82a7-c0eb134428dd","udp":true,"skip-cert-verify":true,"sni":"5.letitbe.ink"}
+- {name: cdnws1, server: 47.242.33.105, port: 443, type: vmess, uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, alterId: 0, cipher: auto, tls: true, servername: cdn.letitbe.ink, network: ws, ws-opts: {path: "/cdn.letitbe.inkvws?ed=2048", headers: {Host: cdn.letitbe.ink}}}
+- {name: cdnws3, server: 211.72.35.110, port: 443, type: vmess, uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, alterId: 0, cipher: auto, tls: true, servername: cdn.letitbe.ink, network: ws, ws-opts: {path: "/cdn.letitbe.inkvws?ed=2048", headers: {Host: cdn.letitbe.ink}}}
+- {name: cdnws4, server: 18.163.249.175, port: 443, type: vmess, uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, alterId: 0, cipher: auto, tls: true, servername: cdn.letitbe.ink, network: ws, ws-opts: {path: "/cdn.letitbe.inkvws?ed=2048", headers: {Host: cdn.letitbe.ink}}}
+- {name: 6ws, server: 6.letitbe.ink, port: 443, type: vmess, uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, alterId: 0, cipher: auto, tls: true, servername: 6.letitbe.ink, network: ws, ws-opts: {path: "/6.letitbe.inkvws?ed=2048", headers: {Host: 6.letitbe.ink}}}
+- {name: 6Trojan, server: 6.letitbe.ink, port: 443, type: trojan, password: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, sni: 6.letitbe.ink}
+- {name: 5ws, server: 5.letitbe.ink, port: 443, type: vmess, uuid: 84f47932-1248-41a8-82a7-c0eb134428dd, alterId: 0, cipher: auto, tls: true, servername: 5.letitbe.ink, network: ws, ws-opts: {path: "/5.letitbe.inkvws?ed=2048", headers: {Host: 5.letitbe.ink}}}
+- {name: 5Trojan, server: 5.letitbe.ink, port: 443, type: trojan, password: 84f47932-1248-41a8-82a7-c0eb134428dd, sni: 5.letitbe.ink}
+- {name: cdnws5, server: 210.75.24.220, port: 443, type: vmess, uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, alterId: 0, cipher: auto, tls: true, servername: cdn.letitbe.ink, network: ws, ws-opts: {path: "/cdn.letitbe.inkvws?ed=2048", headers: {Host: cdn.letitbe.ink}}}
+- {name: cdnws6, server: 211.72.35.119, port: 443, type: vmess, uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, alterId: 0, cipher: auto, tls: true, servername: cdn.letitbe.ink, network: ws, ws-opts: {path: "/cdn.letitbe.inkvws?ed=2048", headers: {Host: cdn.letitbe.ink}}}
+- {name: cdnws2, server: 50.7.250.210, port: 443, type: vmess, uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, alterId: 0, cipher: auto, tls: true, servername: cdn.letitbe.ink, network: ws, ws-opts: {path: "/cdn.letitbe.inkvws?ed=2048", headers: {Host: cdn.letitbe.ink}}}
   - name: JP
     type: snell
     server: 13.114.34.24
@@ -80,10 +86,16 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
+      - cdnws1
+      - cdnws3
+      - cdnws4
       - 6ws
       - 6Trojan
       - 5ws
       - 5Trojan
+      - cdnws5
+      - cdnws6
+      - cdnws2
       - JP
       - HK
       - tomato2
@@ -103,10 +115,16 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - cdnws1
+      - cdnws3
+      - cdnws4
       - 6ws
       - 6Trojan
       - 5ws
       - 5Trojan
+      - cdnws5
+      - cdnws6
+      - cdnws2
       - JP
       - HK
       - tomato2
@@ -125,10 +143,16 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
+      - cdnws1
+      - cdnws3
+      - cdnws4
       - 6ws
       - 6Trojan
       - 5ws
       - 5Trojan
+      - cdnws5
+      - cdnws6
+      - cdnws2
       - JP
       - HK
       - tomato2
@@ -147,10 +171,16 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
+      - cdnws1
+      - cdnws3
+      - cdnws4
       - 6ws
       - 6Trojan
       - 5ws
       - 5Trojan
+      - cdnws5
+      - cdnws6
+      - cdnws2
       - JP
       - HK
       - tomato2
@@ -183,10 +213,16 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
+      - cdnws1
+      - cdnws3
+      - cdnws4
       - 6ws
       - 6Trojan
       - 5ws
       - 5Trojan
+      - cdnws5
+      - cdnws6
+      - cdnws2
       - JP
       - HK
       - tomato2
