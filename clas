@@ -41,6 +41,10 @@ dns:
         - https://dns.google/dns-query
         - https://cloudflare-dns.com/dns-query
 proxies:
+- {name: 6ws, server: 6.letitbe.ink, port: 443, type: vmess, uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, alterId: 0, cipher: auto, tls: true, servername: 6.letitbe.ink, network: ws, ws-opts: {path: "/6.letitbe.inkvws?ed=2048", headers: {Host: 6.letitbe.ink}}}
+- {name: 6Trojan, server: 6.letitbe.ink, port: 443, type: trojan, password: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, sni: 6.letitbe.ink}
+- {name: 5ws, server: 5.letitbe.ink, port: 443, type: vmess, uuid: 84f47932-1248-41a8-82a7-c0eb134428dd, alterId: 0, cipher: auto, tls: true, servername: 5.letitbe.ink, network: ws, ws-opts: {path: "/5.letitbe.inkvws?ed=2048", headers: {Host: 5.letitbe.ink}}}
+- {name: 5Trojan, server: 5.letitbe.ink, port: 443, type: trojan, password: 84f47932-1248-41a8-82a7-c0eb134428dd, sni: 5.letitbe.ink}
   - name: JP
     type: snell
     server: 13.114.34.24
@@ -57,14 +61,6 @@ proxies:
     obfs-opts:
         mode: tls
         host: www.microsoft.com 
-  - name: eeuserv
-    type: snell
-    server: 2a02:0180:0006:0001:0000:0000:0000:4232
-    port: 13254
-    psk: 8JhU2GJiz1eGa6yr
-    obfs-opts:
-        mode: tls
-        host: www.microsoft.com
   - {"type":"vmess","name":"tomato2","ws-opts":{"path":"/","headers":{"host":"xui.mycf.ml"}},"server":"172.64.147.9","port":"2083","uuid":"8a21b84d-183e-450d-ec82-8d45855d8180","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"tomato1","ws-opts":{"path":"/","headers":{"host":"xui.mycf.ml"}},"server":"172.64.145.2","port":"2083","uuid":"8a21b84d-183e-450d-ec82-8d45855d8180","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"koyeb","ws-opts":{"path":"/vmess","headers":{"host":"lirendian-lirentian0215.koyeb.app"}},"server":"104.19.28.145","port":"443","uuid":"225601bb-e174-4810-9828-8d50cf8ef3f9","alterId":"0","cipher":"auto","network":"ws","tls":true}
@@ -84,6 +80,10 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
+      - 6ws
+      - 6Trojan
+      - 5ws
+      - 5Trojan
       - JP
       - HK
       - tomato2
@@ -103,6 +103,10 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 6ws
+      - 6Trojan
+      - 5ws
+      - 5Trojan
       - JP
       - HK
       - tomato2
@@ -121,6 +125,10 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
+      - 6ws
+      - 6Trojan
+      - 5ws
+      - 5Trojan
       - JP
       - HK
       - tomato2
@@ -139,6 +147,10 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
+      - 6ws
+      - 6Trojan
+      - 5ws
+      - 5Trojan
       - JP
       - HK
       - tomato2
@@ -171,6 +183,10 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
+      - 6ws
+      - 6Trojan
+      - 5ws
+      - 5Trojan
       - JP
       - HK
       - tomato2
