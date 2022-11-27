@@ -41,15 +41,6 @@ dns:
         - https://dns.google/dns-query
         - https://cloudflare-dns.com/dns-query
 proxies:
-  - {name: cdnws1, server: 47.242.33.105, port: 443, type: vmess, uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, alterId: 0, cipher: auto, tls: true, servername: cdn.letitbe.ink, network: ws, ws-opts: {path: "/cdn.letitbe.inkvws?ed=2048", headers: {Host: cdn.letitbe.ink}}}
-  - {name: cdnws3, server: 211.72.35.110, port: 443, type: vmess, uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, alterId: 0, cipher: auto, tls: true, servername: cdn.letitbe.ink, network: ws, ws-opts: {path: "/cdn.letitbe.inkvws?ed=2048", headers: {Host: cdn.letitbe.ink}}}
-  - {name: cdnws4, server: 18.163.249.175, port: 443, type: vmess, uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, alterId: 0, cipher: auto, tls: true, servername: cdn.letitbe.ink, network: ws, ws-opts: {path: "/cdn.letitbe.inkvws?ed=2048", headers: {Host: cdn.letitbe.ink}}}
-  - {name: 6ws, server: 6.letitbe.ink, port: 443, type: vmess, uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, alterId: 0, cipher: auto, tls: true, servername: 6.letitbe.ink, network: ws, ws-opts: {path: "/6.letitbe.inkvws?ed=2048", headers: {Host: 6.letitbe.ink}}}
-  - {name: 6Trojan, server: 6.letitbe.ink, port: 443, type: trojan, password: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, sni: 6.letitbe.ink}
-  - {name: 5ws, server: 5.letitbe.ink, port: 443, type: vmess, uuid: 84f47932-1248-41a8-82a7-c0eb134428dd, alterId: 0, cipher: auto, tls: true, servername: 5.letitbe.ink, network: ws, ws-opts: {path: "/5.letitbe.inkvws?ed=2048", headers: {Host: 5.letitbe.ink}}}
-  - {name: 5Trojan, server: 5.letitbe.ink, port: 443, type: trojan, password: 84f47932-1248-41a8-82a7-c0eb134428dd, sni: 5.letitbe.ink}
-  - {name: cdnws5, server: 210.75.24.220, port: 443, type: vmess, uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, alterId: 0, cipher: auto, tls: true, servername: cdn.letitbe.ink, network: ws, ws-opts: {path: "/cdn.letitbe.inkvws?ed=2048", headers: {Host: cdn.letitbe.ink}}}
-  - {name: cdnws6, server: 211.72.35.119, port: 443, type: vmess, uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, alterId: 0, cipher: auto, tls: true, servername: cdn.letitbe.ink, network: ws, ws-opts: {path: "/cdn.letitbe.inkvws?ed=2048", headers: {Host: cdn.letitbe.ink}}}
   - name: JP
     type: snell
     server: 13.114.34.24
@@ -66,16 +57,16 @@ proxies:
     obfs-opts:
         mode: tls
         host: www.microsoft.com 
-  - {"type":"vmess","name":"tomato2","ws-opts":{"path":"/","headers":{"host":"xui.mycf.ml"}},"server":"172.64.147.9","port":"2083","uuid":"8a21b84d-183e-450d-ec82-8d45855d8180","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {name: 6ws, server: 6.letitbe.ink, port: 443, type: vmess, uuid: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, alterId: 0, cipher: auto, tls: true, servername: 6.letitbe.ink, network: ws, ws-opts: {path: "/6.letitbe.inkvws?ed=2048", headers: {Host: 6.letitbe.ink}}}
+  - {name: 6Trojan, server: 6.letitbe.ink, port: 443, type: trojan, password: 3c266fd3-5f9f-4132-90ac-c33a2a316cb5, sni: 6.letitbe.ink}
+- {"type":"vmess","name":"tomato2","ws-opts":{"path":"/","headers":{"host":"xui.mycf.ml"}},"server":"172.64.147.9","port":"2083","uuid":"8a21b84d-183e-450d-ec82-8d45855d8180","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"tomato1","ws-opts":{"path":"/","headers":{"host":"xui.mycf.ml"}},"server":"172.64.145.2","port":"2083","uuid":"8a21b84d-183e-450d-ec82-8d45855d8180","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"koyeb","ws-opts":{"path":"/vmess","headers":{"host":"lirendian-lirentian0215.koyeb.app"}},"server":"104.19.28.145","port":"443","uuid":"225601bb-e174-4810-9828-8d50cf8ef3f9","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"vtp","ws-opts":{"path":"/hginn"},"server":"45.32.73.174","port":"5623","uuid":"535be93a-2d4f-40a5-b776-a420635a30c9","alterId":"0","cipher":"auto","network":"ws"}
   - {"type":"vmess","name":"euserv","ws-opts":{"path":"/","headers":{"host":"li.lirentian.eu.org"}},"server":"2606:4700:8392:a514:4239:b6f9:db7a:4d2c","port":"443","uuid":"56e3832f-ee1b-45b9-e73e-96ae6fef166b","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"trojan","name":"2222","server":"jpp.samvpn.xyz","port":443,"password":"Sam123321","udp":true,"skip-cert-verify":true}
   - {"type":"hysteria","name":"haxh","server":"hax.lirenyi.eu.org","port":23523,"auth_str":"498e9b32a35bf4d807c150ab58ca33dbbc890","alpn":"h3","protocol":"faketcp","up":12,"down":62,"sni":"hax.lirenyi.eu.org","skip-cert-verify":false,"recv_window":26004685,"recv_window_conn":6501171,"disable_mtu_discovery":true}
-  - {"type":"hysteria","name":"haxh1","server":"h.lirenyi.eu.org","port":35848,"auth_str":"790215","alpn":"h3","protocol":"udp","up":40,"down":200,"sni":"h.lirenyi.eu.org","skip-cert-verify":true,"recv_window":83886080,"recv_window_conn":20971520,"disable_mtu_discovery":true}
   - {"type":"hysteria","name":"woidenh","server":"wo.lirenyi.eu.org","port":34650,"auth_str":"790215","alpn":"h3","protocol":"udp","up":40,"down":200,"sni":"wo.lirenyi.eu.org","skip-cert-verify":true,"recv_window":83886080,"recv_window_conn":20971520,"disable_mtu_discovery":true}
-  - {"type":"hysteria","name":"woidenh1","server":"w.lirenyi.eu.org","port":56803,"auth_str":"9829aa","alpn":"h3","protocol":"udp","up":40,"down":200,"sni":"w.lirenyi.eu.org","skip-cert-verify":true,"recv_window":83886080,"recv_window_conn":20971520,"disable_mtu_discovery":true}
   - {"type":"hysteria","name":"euservh","server":"li.lirentian.eu.org","port":7336,"auth_str":"66ed9a","alpn":"h3","protocol":"udp","up":40,"down":200,"sni":"li.lirentian.eu.org","skip-cert-verify":true,"recv_window":83886080,"recv_window_conn":20971520,"disable_mtu_discovery":true}
  
 proxy-groups:
@@ -85,17 +76,10 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
-      - cdnws1
-      - cdnws3
-      - cdnws4
-      - 6ws
-      - 6Trojan
-      - 5ws
-      - 5Trojan
-      - cdnws5
-      - cdnws6
       - JP
       - HK
+      - 6ws
+      - 6Trojan
       - tomato2
       - tomato1
       - koyeb
@@ -103,9 +87,7 @@ proxy-groups:
       - euserv
       - 2222
       - haxh
-      - haxh1
       - woidenh
-      - woidenh1
       - euservh
   - name: ♻️ 自动选择
     type: url-test
@@ -113,17 +95,10 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - cdnws1
-      - cdnws3
-      - cdnws4
-      - 6ws
-      - 6Trojan
-      - 5ws
-      - 5Trojan
-      - cdnws5
-      - cdnws6
       - JP
       - HK
+      - 6ws
+      - 6Trojan
       - tomato2
       - tomato1
       - koyeb
@@ -131,26 +106,17 @@ proxy-groups:
       - euserv
       - 2222
       - haxh
-      - haxh1
       - woidenh
-      - woidenh1
       - euservh
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - cdnws1
-      - cdnws3
-      - cdnws4
-      - 6ws
-      - 6Trojan
-      - 5ws
-      - 5Trojan
-      - cdnws5
-      - cdnws6
       - JP
       - HK
+      - 6ws
+      - 6Trojan
       - tomato2
       - tomato1
       - koyeb
@@ -158,26 +124,17 @@ proxy-groups:
       - euserv
       - 2222
       - haxh
-      - haxh1
       - woidenh
-      - woidenh1
       - euservh
   - name: 🔮 负载均衡
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - cdnws1
-      - cdnws3
-      - cdnws4
-      - 6ws
-      - 6Trojan
-      - 5ws
-      - 5Trojan
-      - cdnws5
-      - cdnws6
       - JP
       - HK
+      - 6ws
+      - 6Trojan
       - tomato2
       - tomato1
       - koyeb
@@ -185,9 +142,7 @@ proxy-groups:
       - euserv
       - 2222
       - haxh
-      - haxh1
       - woidenh
-      - woidenh1
       - euservh
   - name: 🎯 全球直连
     type: select
@@ -208,17 +163,10 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
-      - cdnws1
-      - cdnws3
-      - cdnws4
-      - 6ws
-      - 6Trojan
-      - 5ws
-      - 5Trojan
-      - cdnws5
-      - cdnws6
       - JP
       - HK
+      - 6ws
+      - 6Trojan
       - tomato2
       - tomato1
       - koyeb
@@ -226,9 +174,7 @@ proxy-groups:
       - euserv
       - 2222
       - haxh
-      - haxh1
       - woidenh
-      - woidenh1
       - euservh
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
